@@ -1,0 +1,133 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #ffdfc5;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list li {
+  margin-right: 20px;
+  list-style: none;
+}
+
+.navigation-list a {
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 600;
+  color: rgb(94, 61, 37);
+  position: relative;
+}
+
+.navigation-list a:hover {
+  color: rgb(86, 175, 160);
+}
+
+.navigation-list a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgb(86, 175, 160);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+}
+
+.navigation-list a:hover::before {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.about-text {
+  font-size: 30px;
+  color: rgb(94, 61, 37);
+  margin-left: 50px;
+}
+
+.main-heading {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-weight: 300;
+}
+
+.profile-photo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  margin-right: 120px;
+}
+
+.section-heading {
+  font-size: 30px;
+  color: rgb(94, 61, 37);
+  padding-left: 39px;
+}
+
+.facts-list {
+  list-style: none;
+  font-size: 22px;
+}
+
+.contacts-list {
+  font-size: 22px;
+  list-style: none;
+  padding-left: 40px;
+}
+
+.contacts-list li i {
+  color: rgb(123, 61, 10);
+}
+
+.contacts-list a {
+  text-decoration: none;
+  color: rgb(215, 121, 44);
+}
+
+.contacts-list a:hover {
+  color: rgb(86, 175, 160);
+  transition: color 0.5s;
+}
+
+.footer {
+  height: 50px;
+  background-color: #ffdfc5;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(94, 61, 37);
+  padding-top: 12px;
+}
